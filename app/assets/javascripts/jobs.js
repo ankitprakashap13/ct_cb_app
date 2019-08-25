@@ -1,0 +1,15 @@
+$(document).ready(function(){
+	$('#menu-icon-block').click(function(){
+		$('#menu-block').toggle();
+	});
+	$('#filters-icon-block').click(function(){
+		$('#filters-block').toggle();
+	});
+	$('.job-block').click(function(){
+		$('.main-content').show();
+	});
+	$('.column-title').click(function(){
+		$('.links').hide();
+		$(this).siblings('.links').toggle();
+	})
+})

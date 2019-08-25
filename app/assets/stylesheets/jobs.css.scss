@@ -1,0 +1,568 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= animate
+ */
+
+// Place all the styles related to the jobs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body,html{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+body{
+    // background: url(../assets/350675447.png);
+ //    background-position: center -74px;
+ //    background-repeat: no-repeat;
+ //    background-size: 73% auto;
+ //    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+}
+.left{
+    float: left;
+}
+.desktop-left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.btn {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 8px 55px;
+    border: none;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid transparent;
+}
+.page {
+    padding-top: 150px;
+}
+.mobile{
+    display: none;
+}
+
+// header
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 87px;
+    line-height: 66px;
+    color: #2E2E2E;
+    background: #FFF;
+    z-index: 800;
+    box-shadow: 0 0 8px #9c9c9c;
+    /*border-bottom: 1px solid #333;*/
+}
+.header-logo {
+    margin: 28px 120px 14px 5px;
+}
+.menu{
+    margin: 0 40px;
+}
+.menu a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    /*border-bottom: 4px solid #333;*/
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+.menu a:hover {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #fdb816;
+    height: 100%;
+    display: block;
+    float: left;
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+.menu a.active {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #fdb816;
+    height: 100%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+}
+.header-links{
+    margin: 8px 0 0 10px;
+}
+.header-links a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+}
+.separator-v {
+    border-left: 1px solid #333;
+}
+
+// main content
+
+.main-content {
+    max-width: 743px;
+    margin-left: 400px;
+    margin-top: 53px;
+}
+.banner {
+    position: relative;
+    height: 237px;
+}
+.banner-image {
+    width: 100%;
+    background: #333;
+    height: 237px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner-content-block{
+    width: 65%;
+    float: left;
+}
+.banner-btn-block {
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+.banner-btn {
+    background-color: #85ce3f;
+    background-image: -webkit-linear-gradient(90deg,#009B74 0%,rgba(255,255,255,0) 100%);
+    background-image: -moz-linear-gradient(90deg,#009B74 0%,rgba(255,255,255,0) 100%);
+    background-image: -o-linear-gradient(90deg,#009B74 0%,rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(90deg,#009B74 0%,rgba(255,255,255,0) 100%);
+}
+.banner-content {
+    width: 100%;
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 3px;
+}
+.banner-logo{
+    width: 53px;
+    height: 53px;
+    background: red;
+    position: absolute;
+    margin: 15px;
+    top: -30px;
+    border-radius: 5px;
+}
+.banner-title, .banner-small-text, .banner-text {
+    padding: 5px 0 0 83px;
+    line-height: 1.8;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.banner-small-text, .banner-text {
+    line-height: 1;
+}
+.banner-btn {
+    margin: 18px;
+}
+.content {
+    padding: 15px 0 40px;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.main ul {
+    margin: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main ul li {
+    position: relative;
+}
+
+.main ul li:before {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.tab {
+    float: left;
+    padding: 5px;
+    margin: 5px 5px 0;
+}
+.tab.active {
+    border-bottom: 2px solid #dea318;
+    font-weight: bold;
+}
+.tabs-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.tags {
+    padding: 20px 0;
+}
+
+.tags ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.tags ul li {
+    padding: 5px 20px;
+    float: left;
+    margin: 10px;
+    background: rgb(233, 233, 233);
+    border-radius: 20px;
+}
+
+
+// sidebar
+
+.sidebar{
+    position: absolute;
+    width: 380px;
+    padding-right: 20px;
+    margin-right: -100%;
+    float: left;
+}
+.job-block.active {
+    border: 1px solid #009b74;
+    box-shadow: 0 0 8px #9c9c9c;
+    border-radius: 5px;
+}
+.job-block {
+    padding: 8px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.job-image {
+    width: 55px;
+    height: 55px;
+    margin: 6px 8px 8px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 11px;
+}
+.job-fav {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: #333;
+    top: 16px;
+    right: 9px;
+}
+.job-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 7px 0 2px;
+}
+.job-location {
+    font-size: 12px;
+}
+.job-rate {
+    font-size: 12px;
+    margin: 6px 0 0;
+}
+.job-match{
+    position: absolute;
+    right: 14px;
+    width: auto;
+    bottom: 13px;
+}
+.job-match .match-text{
+    font-size: 10px;
+    float: left;
+    line-height: 2.2;
+    margin-left: 9px;
+}
+.circles{
+    float: left;
+}
+.circles span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #85ce3f;
+}
+
+// subheader
+
+.sub-header{
+    width: 100%;
+    position: fixed;
+    top: 87px;
+    left: 0;
+    z-index: 700;
+    padding: 8px 0;
+    box-shadow: 0 0 8px #9c9c9c;
+    background: #fff
+}
+.filters-block{
+
+}
+.filters-block select {
+    margin: 5px;
+    border: 0;
+    padding: 5px;
+}
+.search-block{
+    margin: 0 70px;
+    position: relative;
+    width: 360px;
+}
+.search-block input{
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-btn{
+    padding: 13px 20px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #68c34a;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    height: 38px;
+}
+
+// footer
+.footer .container{
+    padding: 30px;
+    background: #f2f2f2;
+    border-top: 1px solid #c7cad1;
+}
+.footer-column{
+    float: left;
+    width: 16.66%;
+}
+.footer-logo{
+    margin: 15px 0;
+}
+.footer-column .column-title{
+    color: #0d9ad6;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.links-img{
+    border: 1px solid #6a7384;
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 10px 5px;
+}
+
+
+@media only screen and (max-width: 770px) {
+    h1{
+        font-size: 21px;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop-left{
+        float: none;
+    }
+    .header-logo{
+        margin: 20px 10px 0;
+    }
+    .header{
+        position: relative;
+    }
+    .page{
+        padding: 0;
+    }
+    .sub-header{
+        position: static;
+    }
+    .menu-icon-block{
+        padding: 10px;
+    }
+    .menu-block{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        margin-top: 87px;
+    }
+    .menu{
+        margin: 0;
+        float: none;
+    }
+    .menu a{
+        width: 100%;
+        height: 37px;
+        background: #f2f2f2;
+        line-height: 37px;
+        margin: 0;
+        padding: 10px;
+        box-sizing: content-box;
+    }
+    .menu a:hover {
+        margin: 0;
+        padding: 10px;
+        border: 0;
+    }
+    .menu a.active {
+        margin: 0;
+        padding: 10px;
+        border: 0;
+    }
+    .main-content{
+        display: none;
+    }
+    .filters-block{
+        display: none;
+    }
+    .filters-icon-block {
+        padding: 11px;
+    }
+    .filters-block select {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .sidebar{
+        position: static;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .job-block.active{
+        border: none;
+        border-bottom: 1px solid #ccc;
+        box-shadow: none;
+    }
+    .search-block {
+        margin: 5px 10px;
+        width: 80%
+    }
+    .main-content {
+        max-width: 743px;
+        margin-left: 400px;
+        margin-top: 53px;
+        width: 100%;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        margin-top: 87px;
+        height: auto;
+        overflow-y: auto;
+    }
+    .tabs-block{
+        padding: 0 10px;
+    }
+    .banner{
+        height: 366px;
+    }
+    .banner-logo {
+        left: 50%;
+        margin: 15px 0;
+        transform: translateX(-50%);
+    }
+    .banner-content-block{
+        width: 100%;
+        padding: 40px 0 0;
+        text-align: center;
+        float: none;
+    }
+    .banner-title{
+        padding: 0 10px;
+        white-space: initial;
+    }
+    .banner-small-text{
+        padding: 0 10px;
+    }
+    .banner-btn-block{
+        width: 100%;
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+    .banner-btn-block .btn{
+        width: 80%;
+        padding: 14px;
+        border-radius: 10px;
+    }
+    .footer{
+        clear: both;
+    }
+    .footer-logo{
+        text-align: center;
+    }
+    .footer-column{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-column .column-title{
+        padding: 10px 0;
+    }
+    .footer-column .links{
+        display: none;
+    }
+}
